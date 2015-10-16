@@ -7,5 +7,5 @@ services:
 
 script:
   - docker build -t gesbo/chef-solo .
-  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" hub.docker.com
+  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - docker push gesbo/chef-solo

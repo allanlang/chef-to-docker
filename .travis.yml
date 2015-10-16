@@ -7,5 +7,6 @@ services:
 
 script:
   - docker build -t gesbo/chef-solo .
-  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - docker push gesbo/chef-solo
+#  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+#  - docker push gesbo/chef-solo
+  - docker build -t gesbo/conversion -f conversion.Dockerfile .
